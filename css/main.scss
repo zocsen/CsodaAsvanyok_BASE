@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;700&display=swap');
+/*   GLOBAL   */
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap');
 
 body {
 	height: 100vh;
 	margin: 0;
 	font-family: 'Jost', sans-serif;
-	font-size: 20px;
+	font-size: 1.3rem;
 }
 
 ul {
@@ -21,15 +23,70 @@ img {
 	width: 100%;
 }
 
-#container {
-	display: flex;
+/*   HEADER   */
+
+#shipping-info {
 	text-align: center;
-	padding: 0 8em 0 2em;
+	margin: 0;
+	padding: 0.3em;
+	background-color: black;
+	
+	a {
+		color: white;
+		font-size: 13px;
+		font-weight: 400;
+	}
+
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	//margin: 0 -0.5em 0 -1.5em;
+	padding: 2em 0.5em 2em 0.5em;
 	white-space: nowrap;
 	background-color: rgb(241, 238, 231);
 }
 
-#left {
+.menu {
+	width: 2em;
+	height: 2em;
+	cursor: pointer;
+	padding-top: 0.3em;
+}
+
+.left {
+	display: none;
+}
+
+.right {
+	 ul {
+		display: flex;
+		img {
+			width: 2em;
+			height: 2em;
+		}
+	 }
+}
+
+.center {
+	width: 7.5em;
+	margin: -7em auto 0 auto;
+}
+
+
+
+
+/*
+.container {
+	display: flex;
+	text-align: center;
+	padding: 0 2em 0 2em;
+	white-space: nowrap;
+	background-color: rgb(241, 238, 231);
+}
+
+.left {
 	float: left;
 	width: 10em;
 	margin: auto 0;
@@ -37,13 +94,13 @@ img {
 		display: flex;
 		a {
 			display: block;
-			padding: 0 1.3em;
+			padding: 0 1em;
 			color: black;
 		}
 	}
 }
 
-#center {
+.center {
 	display: inline-block;
 	margin: 0 auto;
 	//width: auto;
@@ -52,7 +109,7 @@ img {
 	}
 }
 
-#right {
+.right {
 	float: right;
 	width: 10em;
 	margin: auto 0;
@@ -61,10 +118,12 @@ img {
 		display: flex;
 		a {
 			display: block;
-			padding: 0 1.5em;
+			padding: 0 1em;
 			img {
 				width: 1.5em;
 			}
 		}
 	}
 }
+*/
+

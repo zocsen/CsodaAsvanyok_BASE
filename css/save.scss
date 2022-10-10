@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;700&display=swap');
 
 body {
 	height: 100vh;
 	margin: 0;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
 }
 
 ul {
@@ -20,47 +21,55 @@ img {
 	width: 100%;
 }
 
-.header-wrapper {
-	background: grey;
-	align-items: center;
-
-	a {
-		color: white;
-	}
-
+#container {
+	display: flex;
+	text-align: center;
+	padding: 0 2em 0 2em;
+	white-space: nowrap;
+	background-color: rgb(241, 238, 231);
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	padding: 2em;
+#left {
+	float: left;
+	width: 10em;
+	margin: auto 0;
 
-	nav {
-		margin: auto 0 auto 0;
+	ul {
+		display: flex;
 
-		ul {
-			display: flex;
-
-			a {
-				display: block;
-				padding: 0 1em;
-
-			}
+		a {
+			display: block;
+			padding: 0 1em;
+			color: black;
 		}
 	}
+}
 
-	.logo {
-		color: black;
-		font-weight: bold;
-		margin: auto 0 auto 0;
-		text-align: center;
+#center {
+	display: inline-block;
+	margin: 0 auto;
+
+	//width: auto;
+	img {
+		width: 150px;
 	}
+}
 
-	.account-icons {
-		margin: auto 0 auto 0 auto;
+#right {
+	float: right;
+	width: 10em;
+	margin: auto 0;
 
-		ul {
-			display: flex;
+	ul {
+		display: flex;
+
+		a {
+			display: block;
+			padding: 0 1em;
+
+			img {
+				width: 1.5em;
+			}
 		}
 	}
 }
