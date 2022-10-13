@@ -15,6 +15,7 @@ ul {
 
 a {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.11);
 }
 
 img {
@@ -62,10 +63,14 @@ img {
 }
 
 .center {
-  width: 7.5em;
-  margin: -7em auto 0 auto;
+  width: 5.5em;
+  margin: -6.2em auto 0 auto;
+}
+.center a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+/*   HERO IMG   */
 /*
 .container {
 	display: flex;
