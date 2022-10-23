@@ -17,36 +17,72 @@
 </head>
 
 <body>
-	<!------------------------------------Header-------------------------------------------->
+
+	<!--
+		#HEADER
+	-->
+
 	<header>
-		<p id="shipping-info"><a href="#">INGYENES HÁZHOZSZÁLLÍTÁS</a></p>
+		<div class="header-top">
+			<div class="container">
+				<ul class="header-social-container">
+					<li><a href="#" class="social-link">
+							<ion-icon name="logo-facebook"></ion-icon>
+						</a></li>
 
-		<div class="container">
-			<a href="#"><img class="menu" src="assets/images/hamburger-menu.svg" alt="Hamburger-Menu"></a>
+					<li><a href="#" class="social-link">
+							<ion-icon name="logo-twitter"></ion-icon>
+						</a></li>
 
-			<nav class="left">
-				<ul>
-					<li><a href="#">Új</a></li>
-					<li><a href="#">Összes</a></li>
-					<li><a href="#">Személyre szabás</a></li>
-					<li><a href="#">Akció</a></li>
+					<li><a href="#" class="social-link">
+							<ion-icon name="logo-instagram"></ion-icon>
+						</a></li>
 				</ul>
-			</nav>
 
-			<div class="right">
-				<ul>
-					<li><a href="#"><img class="search-icon" src="assets/images/search-button.svg" alt="Search"></a>
-					</li>
-					<!--<li><a href="#"><img src="images/account-icon.svg" alt="Account"></a></li>-->
-					<li><a href="#"><img src="assets/images/shopping-cart.svg" alt="Shopping Cart"></a>
-					</li>
-				</ul>
+				<div class="header-shipping info">
+					<p>Ingyenes Házhozszállítás</p>
+				</div>
+
+				<div class="header-top-actions">
+					<select name="currency">
+						<option value="huf">Ft (HUF)</option>
+						<option value="eur">&euro; (EUR)</option>
+					</select>
+					<select name="language">
+						<option value="hu-HU">Magyar</option>
+						<option value="en-US">English</option>
+						<option value="it-IT">Italiano</option>
+					</select>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="header-main">
+			<div class="container">
+				<a href="index.html" class="header-logo">
+					<img src="assets/images/csendescsakra-logo.svg" alt="Logo" width="120" height="120">
+				</a>
+
+				<div class="header-user-actions">
+					<button class="action-btn">
+						<ion-icon name="person-outline"></ion-icon>
+					</button>
+
+					<!-- <button class="action-btn">
+						<ion-icon name="heart-outline"></ion-icon>
+						<span class="count">0</span>
+					</button>
+					-->
+
+					<button class="action-btn">
+						<ion-icon name="bag-handle-outline"></ion-icon>
+						<span class="count">0</span>
+					</button>
+				</div>
 			</div>
 		</div>
 
-		<nav class="center">
-			<a href="index.html"><img src="assets/images/csendescsakra-logo.svg" alt="CsendesCsakra Logo"></a>
-		</nav>
 
 	</header>
 
