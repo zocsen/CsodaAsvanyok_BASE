@@ -17,7 +17,7 @@
 	--spanish-gray: hsl(0, 0%, 60%);
 	--sonic-silver: hsl(0, 0%, 47%);
 	--eerie-black: hsl(0, 0%, 13%);
-	--salmon-pink: hsl(353, 100%, 78%);
+	--salmon-pink: rgb(255, 143, 156);
 	--sandy-brown: hsl(29, 90%, 65%);
 	--bittersweet: hsl(0, 100%, 70%);
 	--ocean-green: hsl(152, 51%, 52%);
@@ -73,7 +73,7 @@
 	padding: 0;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
-	font-family: 'Jost', sans-serif;
+	font-family: 'Old Standard TT', serif;
 	
 }
 
@@ -181,9 +181,10 @@ body::-webkit-scrollbar-thumb:hover {
 	border-bottom: 1px solid var(--cultured);
 	align-items: center;
 	justify-content: center;
+	background-color:hsl(0, 0%, 13%);
 }
 .header-shipping-info {
-	color: var(--sonic-silver);
+	color: white;
 		font-size: var(--fs-9);
 		text-transform: uppercase;
 		align-items: center;
@@ -193,10 +194,6 @@ body::-webkit-scrollbar-thumb:hover {
 	//padding: 20px 0;
 	border-bottom: 1px solid var(--cultured);
 	background-color: #FDE8E1;
-}
-
-.header-logo {
-	
 }
 
 .header-logo img {
@@ -238,10 +235,6 @@ body::-webkit-scrollbar-thumb:hover {
 	-webkit-transition: color var(--transition-timing);
 	-o-transition: color var(--transition-timing);
 	transition: color var(--transition-timing);
-}
-
-.search-btn:hover {
-	color: var(--salmon-pink);
 }
 
 .mobile-bottom-navigation {
@@ -338,7 +331,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .menu-top .menu-title {
-	color: var(--salmon-pink);
+	color: var(--bittersweet);
 	font-size: var(--fs-4);
 	font-weight: var(--weight-600);
 }
