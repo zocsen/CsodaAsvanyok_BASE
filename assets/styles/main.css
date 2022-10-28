@@ -152,7 +152,10 @@ body::-webkit-scrollbar-thumb:hover {
 .header-top {
   display: block;
   padding: 10px 0;
+  display: flex;
   border-bottom: 1px solid var(--cultured);
+  align-items: center;
+  justify-content: center;
 }
 
 .header-shipping-info {
@@ -163,16 +166,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header-main {
-  padding: 20px 0;
   border-bottom: 1px solid var(--cultured);
-}
-
-.header-logo {
-  margin-bottom: 20px;
+  background-color: #FDE8E1;
 }
 
 .header-logo img {
-  margin: auto;
+  margin: 0 auto 0 auto;
 }
 
 .header-search-container {
@@ -605,6 +604,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .sidebar-close-btn {
+  display: none;
   color: var(--eerie-black);
   font-size: 22px;
   font-weight: var(--weight-600);
