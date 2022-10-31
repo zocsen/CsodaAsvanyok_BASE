@@ -172,8 +172,7 @@ body::-webkit-scrollbar-thumb:hover {
   height: 150px;
   max-height: 150px;
 }
-
-.header-logo img {
+.header-main img {
   margin: 0 auto 0 auto;
   width: 60%;
   padding: 30px;
@@ -190,7 +189,6 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 5;
 }
 .mobile-top-navigation .action-btn {
   position: relative;
