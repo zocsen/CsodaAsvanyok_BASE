@@ -176,7 +176,39 @@ body::-webkit-scrollbar-thumb:hover {
 .header-logo img {
   margin: 0 auto 0 auto;
   width: 60%;
-  padding: 30px 0px 30px 0;
+  padding: 30px;
+}
+
+.mobile-top-navigation {
+  position: fixed;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+.mobile-top-navigation .action-btn {
+  position: relative;
+  font-size: 35px;
+  color: var(--eerie-black);
+  padding: 10px;
+}
+.mobile-top-navigation .count {
+  background: var(--bittersweet);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 20px;
 }
 
 .mobile-bottom-navigation {
