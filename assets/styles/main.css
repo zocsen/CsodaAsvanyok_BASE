@@ -158,8 +158,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   background-color: hsl(0deg, 0%, 13%);
 }
-
-.header-shipping-info {
+.header-top .header-shipping-info {
   color: white;
   font-size: var(--fs-9);
   text-transform: uppercase;
@@ -174,11 +173,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header-main img {
   margin: 0 auto 0 auto;
-  width: 60%;
-  padding: 30px;
+  width: 80%;
+  padding: 35px;
 }
-
-.mobile-top-navigation {
+.header-main .mobile-top-navigation {
   position: fixed;
   top: 84px;
   left: 50%;
@@ -190,13 +188,13 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: space-between;
   align-items: center;
 }
-.mobile-top-navigation .action-btn {
+.header-main .mobile-top-navigation .action-btn {
   position: relative;
   font-size: 35px;
   color: var(--eerie-black);
   padding: 10px;
 }
-.mobile-top-navigation .count {
+.header-main .mobile-top-navigation .count {
   background: var(--bittersweet);
   color: var(--white);
   position: absolute;
@@ -855,42 +853,45 @@ body::-webkit-scrollbar-thumb:hover {
   /**
     * #HEADER 
     */
-  .header-logo img {
-    padding: 0px;
-  }
   .header-main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .header-social-container {
+  .header-main .mobile-top-navigation {
+    display: none;
+  }
+  .header-main .header-logo img {
+    padding: 0px;
+  }
+  .header-main .header-social-container {
     display: flex;
     align-items: center;
     gap: 15px;
   }
-  .header-social-container .social-link {
+  .header-main .header-social-container .social-link {
     padding: 14px;
     background: hsl(0deg, 0%, 95%);
     border-radius: var(--border-radius-sm);
     color: var(--sonic-silver);
     transition: var(--transition-timing);
   }
-  .header-social-container .social-link:hover {
+  .header-main .header-social-container .social-link:hover {
     background: var(--salmon-pink);
     color: var(--white);
   }
-  .header-user-actions {
+  .header-main .header-user-actions {
     display: flex;
     align-items: center;
     gap: 15px;
   }
-  .header-user-actions .action-btn {
+  .header-main .header-user-actions .action-btn {
     position: relative;
     font-size: 35px;
     color: var(--onyx);
     padding: 5px;
   }
-  .header-user-actions .count {
+  .header-main .header-user-actions .count {
     position: absolute;
     top: -2px;
     right: -3px;
