@@ -2,13 +2,16 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap');
+
 :root {
 
 	/**
     * colors
     */
 
-	// Font: Old Standard TT Regular
+	// font-family: 'Old Standard TT', serif;
+	// font-family: 'Montserrat', sans-serif;
 
 	//#5F4121 barna
 	//#FDE8E1 pink
@@ -74,8 +77,7 @@
 	padding: 0;
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
-	font-family: 'Old Standard TT', serif;
-	
+	font-family: 'Montserrat', sans-serif;
 }
 
 a {
@@ -165,6 +167,19 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /*-----------------------------------*\
+  #HOMEPAGE
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #BRACELETS
+\*-----------------------------------*/
+
+
+/*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
 
@@ -177,7 +192,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .header-top {
 	display: block;
-	padding: 10px 0;
+	height: 25px;
 	display: flex;
 	border-bottom: 1px solid var(--cultured);
 	align-items: center;
@@ -186,7 +201,8 @@ body::-webkit-scrollbar-thumb:hover {
 	
 	.header-shipping-info {
 		color: white;
-		font-size: var(--fs-9);
+		font-size: 10px;
+		font-weight: 100;
 		text-transform: uppercase;
 		align-items: center;
 	}
@@ -195,82 +211,71 @@ body::-webkit-scrollbar-thumb:hover {
 .header-main {
 	border-bottom: 1px solid var(--cultured);
 	background-color: #FDE8E1;
-	height: 150px;
-	max-height: 150px;
-
-	.container {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-pack: justify;
-		-webkit-justify-content: space-between;
-		-ms-flex-pack: justify;
-		justify-content: space-between;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-	}
+	max-height: 100px;
 	
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+
+	.container-left {
+		display: flex;
+
+		.hamburger-menu {
+			margin-left: 15px;
+
+			.action-btn {
+				position: relative;
+				font-size: 35px;
+				color: var(--eerie-black);
+			}
+		}
+		
+		.search-icon {
+			margin-left: 10px;
+		}
+	}
+
 	img {
 		margin: 0 auto 0 auto;
-		width: 100%;
-		padding: 20px;
-		max-width: 270px;
+		padding: 10px 0;
 	}
 
-	.hamburger-menu {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
+	.container-right {
 		display: flex;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		margin-left: 5px;
 
-		.action-btn {
-			position: relative;
-			font-size: 35px;
-			color: var(--eerie-black);
-			padding: 10px;
-		}
+		.favorite-icon { margin-right: 10px; }
 
-		
-	}
+		.shopping-bag {
+			margin-right: 15px;
 
-	.shopping-cart {
-		display: -webkit-box;
-		display: -webkit-flex;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-webkit-align-items: center;
-		-ms-flex-align: center;
-		align-items: center;
-		margin-right: 5px;
+			.action-btn {
+				position: relative;
+				font-size: 35px;
+				color: var(--eerie-black);
+			}
 
-		.action-btn {
-			position: relative;
-			font-size: 35px;
-			color: var(--eerie-black);
-			padding: 10px;
-		}
-
-		.count {
-			background: var(--bittersweet);
-			color: var(--white);
-			position: absolute;
-			top: 2px;
-			right: 7px;
-			font-size: 12px;
-			font-weight: var(--weight-500);
-			line-height: 1;
-			padding: 2px 4px;
-			-webkit-border-radius: 20px;
-			border-radius: 20px;
+			.count {
+				background: var(--bittersweet);
+				color: var(--white);
+				position: absolute;
+				top: 2px;
+				right: 7px;
+				font-size: 12px;
+				font-weight: var(--weight-500);
+				line-height: 1;
+				padding: 2px 4px;
+				-webkit-border-radius: 20px;
+				border-radius: 20px;
+			}
 		}
 	}
 }
@@ -931,7 +936,7 @@ body::-webkit-scrollbar-thumb:hover {
 			display: none;
 		}
 		
-		.shopping-cart {
+		.shopping-bag {
 			display: none;
 		}
 
