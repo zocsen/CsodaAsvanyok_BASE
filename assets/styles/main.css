@@ -55,6 +55,16 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  color: black;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin-bottom: 50px;
+  padding: 0;
 }
 
 a {
@@ -240,7 +250,7 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   vertical-align: middle;
   justify-content: space-between;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   padding-bottom: 30px;
 }
@@ -251,6 +261,9 @@ body::-webkit-scrollbar-thumb:hover {
   display: flex;
   gap: 5px;
 }
+.main-container .sort-section button p {
+  font-weight: 600;
+}
 .main-container .product-container {
   display: grid;
   grid-gap: 24px 20px;
@@ -259,12 +272,41 @@ body::-webkit-scrollbar-thumb:hover {
 .main-container .product-container img {
   width: 100%;
   height: auto;
-  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.5));
 }
 .main-container .product-container h2 {
-  font-size: 12px;
-  padding-top: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 10px;
   padding-bottom: 5px;
+}
+
+.footer-container {
+  margin: 0 15px;
+}
+.footer-container .footer-tervezo {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.footer-container ul {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 50px 20px;
+  gap: 50px 20px;
+  padding-bottom: 50px px;
+  border-bottom: 1px solid #dddee0;
+  font-size: 14px;
+}
+.footer-container ul p {
+  font-weight: 600;
+  padding-bottom: 20px;
+  font-size: 15px;
+}
+.footer-container ul a {
+  padding-bottom: 8px;
+}
+.footer-container ul .footer-social-media {
+  display: flex;
 }
 
 .mobile-navigation-menu {
@@ -618,6 +660,11 @@ body::-webkit-scrollbar-thumb:hover {
 /*-----------------------------------*\
   #RESPONSIVE
 \*-----------------------------------*/
+@media (min-width: 360px) {
+  .footer-container ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 /**
  * responsive larger than 480px screen
  */
