@@ -18,6 +18,9 @@
 
 	
 
+	--brown: #A54A2F;
+	--pink: #FDE8E1;
+
 	--spanish-gray: hsl(0, 0%, 60%);
 	--sonic-silver: hsl(0, 0%, 47%);
 	--eerie-black: hsl(0, 0%, 13%);
@@ -78,7 +81,6 @@
 	-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	color: black;
 }
 
 hr {
@@ -92,6 +94,7 @@ hr {
 
 a {
 	text-decoration: none;
+	color: black;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.11);
 }
 
@@ -219,8 +222,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .header-main {
-	border-bottom: 1px solid var(--cultured);
-	background-color: #FDE8E1;
+	filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.20));
+	background-color: var(--pink);
 	max-height: 100px;
 	
 	display: -webkit-box;
