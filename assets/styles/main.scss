@@ -522,12 +522,25 @@ body::-webkit-scrollbar-thumb:hover {
 	visibility: visible;
 }
 
-.menu-bottom .menu-category-list {
+.menu-category-list {
 	margin-bottom: 20px;
 }
 
-.menu-bottom .menu-category {
+.menu-bottom .menu-category-list {
 	border-bottom: none;
+
+	p {
+		font-size: 20px;
+		font-weight: 300;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+
+	.down-arrow {
+		margin: 0 auto;
+		padding-bottom: 30px;
+	}
 }
 
 .menu-bottom .menu-title {
