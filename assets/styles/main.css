@@ -180,6 +180,8 @@ body::-webkit-scrollbar-thumb:hover {
   filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.2));
   background-color: var(--pink);
   max-height: 100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header-main .container {
   display: flex;
@@ -188,9 +190,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header-main .container-left {
   display: flex;
-}
-.header-main .container-left .hamburger-menu {
-  margin-left: 15px;
 }
 .header-main .container-left .hamburger-menu .action-btn {
   position: relative;
@@ -210,9 +209,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .header-main .container-right .favorite-icon {
   margin-right: 10px;
-}
-.header-main .container-right .shopping-bag {
-  margin-right: 15px;
 }
 .header-main .container-right .shopping-bag .action-btn {
   position: relative;
@@ -292,7 +288,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: -100%;
   width: 100%;
   max-width: 320px;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   box-shadow: 0 0 10px hsla(0deg, 0%, 0%, 0.1);
   overflow-y: scroll;
@@ -536,6 +532,7 @@ body::-webkit-scrollbar-thumb:hover {
     * #REUSED STYLE 
     */
   .container {
+    max-width: 750px;
     margin: auto;
   }
   /**

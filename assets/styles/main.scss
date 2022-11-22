@@ -209,6 +209,8 @@ body::-webkit-scrollbar-thumb:hover {
 	filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.20));
 	background-color: var(--pink);
 	max-height: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
 	
 	.container{
 		display: -webkit-box;
@@ -229,7 +231,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: flex;
 
 		.hamburger-menu {
-			margin-left: 15px;
+			//margin-left: 15px;
 
 			.action-btn {
 				position: relative;
@@ -255,8 +257,6 @@ body::-webkit-scrollbar-thumb:hover {
 		.favorite-icon { margin-right: 10px; }
 
 		.shopping-bag {
-			margin-right: 15px;
-
 			.action-btn {
 				position: relative;
 				font-size: 35px;
@@ -353,7 +353,7 @@ body::-webkit-scrollbar-thumb:hover {
 	left: -100%;
 	width: 100%;
 	max-width: 320px;
-	height: 100vh;
+	height: 100%;
 	padding: 20px;
 	-webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
@@ -656,7 +656,7 @@ body::-webkit-scrollbar-thumb:hover {
    */
 
 	.container {
-		//max-width: 750px;
+		max-width: 750px;
 		margin: auto;
 	}
 
