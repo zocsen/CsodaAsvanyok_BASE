@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
 	<meta charset="UTF-8">
@@ -23,15 +23,10 @@
 <body>
 	<div class="overlay" data-overlay></div>
 
-	<!--
-      #HEADER
-    -->
-	<!-- <div w3-include-html="header.html"></div> -->
-
+	<!-- #region Header -->
 
 	<header>
-
-		<!-- SHIPPING INFO -->
+		<!-- #region Shipping info -->
 		<div class="header-top">
 			<div class="container">
 				<div class="header-shipping-info">
@@ -39,43 +34,49 @@
 				</div>
 			</div>
 		</div>
+		<!-- #endregion Shipping info -->
 
-		<!-- MAIN HEADER -->
+		<!-- #region Main Header -->
 		<div class="header-main">
-			<div class="container-left">
-				<div class="hamburger-menu">
-					<button class="action-btn" data-mobile-menu-open-btn>
-						<img src="assets/images/menu.svg" alt="hamburger-menu">
-					</button>
+			<div class="container">
+				<div class="container-left">
+					<div class="hamburger-menu">
+						<button class="action-btn" data-mobile-menu-open-btn>
+							<img src="assets/images/icons/menu.svg" alt="hamburger-menu">
+						</button>
+					</div>
+
+					<div class="search-icon">
+						<button class="action-btn" data-mobile-menu-open-btn>
+							<img src="assets/images/icons/search.svg" alt="search-icon">
+						</button>
+					</div>
 				</div>
 
-				<div class="search-icon">
-					<button class="action-btn" data-mobile-menu-open-btn>
-						<img src="assets/images/search.svg" alt="search-icon">
-					</button>
+				<a href="index.html"><img src="assets/images/logo/logonew.svg" alt="Logo" width="100px"
+						height="100px"></a>
+
+				<div class="container-right">
+					<div class="favorite-icon">
+						<button class="action-btn" data-mobile-menu-open-btn>
+							<img src="assets/images/icons/favorite.svg" alt="my-favorites">
+						</button>
+					</div>
+
+					<div class="shopping-bag">
+						<button class="action-btn">
+							<img src="assets/images/icons/shopping_bag.svg" alt="shopping-cart">
+							<span class="count">0</span>
+						</button>
+					</div>
+
 				</div>
 			</div>
 
-			<a href="index.html"><img src="assets/images/logo/logonew.svg" alt="Logo" width="100px" height="100px"></a>
-
-			<div class="container-right">
-				<div class="favorite-icon">
-					<button class="action-btn" data-mobile-menu-open-btn>
-						<img src="assets/images/favorite.svg" alt="my-favorites">
-					</button>
-				</div>
-
-				<div class="shopping-bag">
-					<button class="action-btn">
-						<img src="assets/images/shopping_bag.svg" alt="shopping-cart">
-						<span class="count">0</span>
-					</button>
-				</div>
-
-			</div>
 		</div>
+		<!-- #endregion Main Header -->
 
-		<!-- DESKTOP NAV -->
+		<!-- #region Desktop Navigation -->
 		<nav class="desktop-navigation-menu">
 			<div class="container">
 
@@ -145,10 +146,9 @@
 				</ul>
 			</div>
 		</nav>
+		<!-- #endregion Desktop Navigation -->
 
-
-
-		<!-- MOBILE MENU VIEW -->
+		<!-- #region Mobile Navigation -->
 		<nav class="mobile-navigation-menu has-scrollbar" data-mobile-menu>
 
 			<div class="menu-top">
@@ -161,8 +161,6 @@
 				<!-- DUNNO WHY IT'S NEEDED -->
 				<button class="sidebar-close-btn" data-mobile-menu-close-btn></button>
 			</div>
-
-
 
 			<ul class="mobile-menu-category-list" data-mobile-menu-close-btn>
 
@@ -232,7 +230,7 @@
 
 					<p>Ne maradj le semmiről</p>
 
-					<img src="assets/images/down-arrow.svg" class="down-arrow" alt="Down arrow">
+					<img src="assets/images/icons/down-arrow.svg" class="down-arrow" alt="Down arrow">
 
 
 					<!-- SOCIALS -->
@@ -255,85 +253,84 @@
 					</ul>
 			</div>
 		</nav>
-
+		<!-- #endregion Mobile Navigation -->
 	</header>
 
-
-
-	<!--
-    - MAIN
-  -->
+	<!-- #endregion Header -->
 
 	<main>
 		<div class="main-container">
-			<p class="main-title">Összes Karkötő</p>
-			<div class="sort-section">
-				<p>x/x termék</p>
+			<div class="container">
+				<p class="main-title">Összes Karkötő</p>
+				<div class="sort-section">
+					<p>x/x termék</p>
 
-				<button>
-					<img src="assets/images/tune.svg" alt="">
-					<p>Szűrő</p>
-				</button>
+					<button>
+						<img src="assets/images/icons/tune.svg" alt="">
+						<p>Szűrő</p>
+					</button>
+				</div>
+
+				<ul class="product-container">
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/001.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/002.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/003.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/004.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/001.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/002.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/003.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="assets/images/bracelets/004.jpg" alt="Karkoto">
+							<h2>Fogyást segítő karkötő</h2>
+							<p>3 890Ft</p>
+						</a>
+					</li>
+				</ul>
 			</div>
 
-			<ul class="product-container">
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/001.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/002.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/003.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/004.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/FOGY001.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/FOGY001.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/FOGY001.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-				<li>
-					<a href="">
-						<img src="assets/images/bracelets/FOGY001.jpg" alt="Karkoto">
-						<h2>Fogyást segítő karkötő</h2>
-						<p>3 890Ft</p>
-					</a>
-				</li>
-			</ul>
 
 
 
@@ -342,53 +339,53 @@
 
 	<footer>
 		<div class="footer-container">
-
-			<div class="footer-tervezo">
-				<p>Tervezd meg saját ékszereid, mi házhoz visszük!</p>
-				<a href="tervezo.html">Irány az ÉKSZER TERVEZŐ</a>
+			<div class="container">
+				<div class="footer-tervezo">
+					<p>Tervezd meg saját ékszereid, mi házhoz visszük!</p>
+					<a href="tervezo.html">Irány az ÉKSZER TERVEZŐ</a>
+				</div>
+				<hr>
+				<ul>
+					<li>
+						<p class="footer-title">MENÜ</p>
+						<a href="#">Karkötők</a>
+						<a href="#">Nyakláncok</a>
+						<!-- <a href="#">Gyűrűk</a> -->
+						<a href="#">Ásványok</a>
+						<a href="#">Dekorációk</a>
+						<a href="#">Blog</a>
+						<a href="#">Felhasználói fiók</a>
+						<a href="#">Írj nekünk!</a>
+					</li>
+					<li>
+						<p>SEGÍTSÉG</p>
+						<a href="#">Fizetés és Szállítás</a>
+						<a href="#">Gyakran ismételt kérdések</a>
+						<a href="#">Méret segédlet</a>
+						<a href="#">ÁSZF</a>
+						<a href="#">Adatkezelési tájékoztató</a>
+						<a href="#">Cookie beállítások</a>
+					</li>
+					<li>
+						<p>ELÉRHETŐSÉGEINK</p>
+						<a href="#">info@csodaasvanyok.hu</a>
+						<div class="footer-social-media">
+							<a href="#">
+								<ion-icon name="logo-facebook"></ion-icon>
+								<p>Facebook</p>
+							</a>
+							<a href="#">
+								<ion-icon name="logo-instagram"></ion-icon>
+								<p>Instagram</p>
+							</a>
+							<a href="#">
+								<ion-icon name="logo-tiktok"></ion-icon>
+								<p>TikTok</p>
+							</a>
+						</div>
+					</li>
+				</ul>
 			</div>
-
-			<hr>
-
-			<ul>
-				<li>
-					<p class="footer-title">MENÜ</p>
-					<a href="#">Karkötők</a>
-					<a href="#">Nyakláncok</a>
-					<a href="#">Gyűrűk</a>
-					<a href="#">Ásványok</a>
-					<a href="#">Ásvány tudnivalók</a>
-					<a href="#">Blog</a>
-					<a href="#">Kosár</a>
-					<a href="#">Felhasználói fiók</a>
-					<a href="#">Írj nekünk!</a>
-				</li>
-				<li>
-					<p>SEGÍTSÉG</p>
-					<a href="#">Fizetés és Szállítás</a>
-					<a href="#">Gyakran ismételt kérdések</a>
-					<a href="#">Méret segédlet</a>
-					<a href="#">ÁSZF</a>
-					<a href="#">Adatkezelési tájékoztató</a>
-					<a href="#">Cookie beállítások</a>
-				</li>
-				<li>
-					<p>ELÉRHETŐSÉGEINK</p>
-					<a href="#">info@csodaasvanyok.hu</a>
-					<div class="footer-social-media">
-						<a href="#">
-							<ion-icon name="logo-facebook"></ion-icon>
-						</a>
-						<a href="#">
-							<ion-icon name="logo-instagram"></ion-icon>
-						</a>
-						<a href="#">
-							<ion-icon name="logo-tiktok"></ion-icon>
-						</a>
-					</div>
-
-				</li>
-			</ul>
 		</div>
 	</footer>
 
