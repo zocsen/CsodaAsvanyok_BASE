@@ -122,23 +122,23 @@ body {
  */
 
 body::-webkit-scrollbar {
-	width: 15px;
+	width: 8px;
 }
 
 body::-webkit-scrollbar-track {
 	background: white;
-	border-left: 1px solid hsl(0, 0%, 93%);
+	//border-left: 0px solid hsl(0, 0%, 93%);
 }
 
 body::-webkit-scrollbar-thumb {
 	background: hsl(0, 0%, 80%);
-	border: 3px solid var(--white);
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
+	//border: 3px solid var(--white);
+	//-webkit-border-radius: 10px;
+	//border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-	background: hsl(0, 0%, 70%);
+	background: hsl(0, 0%, 50%);
 }
 
 .title {
@@ -183,7 +183,14 @@ body::-webkit-scrollbar-thumb:hover {
 .header-top-actions,
 .header-user-actions,
 .desktop-navigation-menu,
-.header-social-container {
+.header-social-container,
+.products-button,
+.account-icon,
+.search-icon-right {
+	display: none;
+}
+
+.container-right p {
 	display: none;
 }
 
@@ -240,7 +247,7 @@ body::-webkit-scrollbar-thumb:hover {
 			}
 		}
 		
-		.search-icon {
+		.search-icon-left {
 			margin-left: 10px;
 		}
 	}
@@ -656,8 +663,9 @@ body::-webkit-scrollbar-thumb:hover {
    */
 
 	.container {
-		max-width: 750px;
+		max-width: 850px;
 		margin: auto;
+		padding: 0 10px;
 	}
 
 	/**
@@ -677,48 +685,23 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (min-width: 1024px) {
 
-	/**
-   * #CUSTOM PROPERTY
-   */
-
-	:root {
-
-		/**
-     * typography 
-     */
-
-		--fs-1: 2.625rem;
-		--fs-2: 1.125rem;
-
-	}
-
-
-
-	/**
-   * #REUSED STYLE 
-   */
-
 	.container {
 		max-width: 980px;
 	}
 
-
-
-	/**
-   * #NOTIFICATION TOAST 
-   */
-
-	.notification-toast {
-		bottom: 30px;
+	/* #region Header */
+	.header-top {
+		height: 30px;
+		
+		p {
+			font-size: 12px;
+		}
 	}
 
-
-
-	/**
-   * #HEADER 
-   */
-
     .header-main {
+		max-height: 125px;
+		
+
 		.container {
 			display: -webkit-box;
 			display: -webkit-flex;
@@ -732,46 +715,63 @@ body::-webkit-scrollbar-thumb:hover {
 			-webkit-align-items: center;
 			-ms-flex-align: center;
 			align-items: center;
-		}
+			height: 125px;
 
-		.hamburger-menu {
-			display: none;
-		}
-		
-		.shopping-bag {
-			display: none;
-		}
+			.products-button,
+			.search-icon-right {
+				display:unset;
+			}
 
-		.header-logo img {
-			padding: 0px;
-		}
+			.hamburger-menu {
+				display: none;
+			}
 
-		.header-social-container {
-			display: -webkit-box;
-			display: -webkit-flex;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-align: center;
-			-webkit-align-items: center;
-			-ms-flex-align: center;
-			align-items: center;
-			gap: 15px;
-		}
+			.search-icon-left {
+				display: none;
+			}
 
-		.header-social-container .social-link {
-			padding: 14px;
-			background: hsl(0, 0%, 95%);
-			-webkit-border-radius: var(--border-radius-sm);
-			border-radius: var(--border-radius-sm);
-			color: var(--sonic-silver);
-			-webkit-transition: var(--transition-timing);
-			-o-transition: var(--transition-timing);
-			transition: var(--transition-timing);
-		}
+			.account-icon {
+				//display: unset;
+			}
 
-		.header-social-container .social-link:hover {
-			background: var(--salmon-pink);
-			color: var(--white);
+			.products-button {
+				p {
+					padding: 15px 0;
+					font-weight: 500;
+					font-size: 18px;
+				}
+
+				.action-btn {
+					display: flex;
+					padding: 0;
+				}
+			}
+
+			img {
+				width: 125%;
+			}
+
+			.logo {
+				padding: 0;
+				width: 140px;
+			}
+			
+			.container-right {
+				width: 132.91px;
+				max-width: 132.91px;
+				justify-content: space-between;
+
+				.favorite-icon {
+					margin: 0;
+				}
+
+				p {
+					//display: unset;
+					//font-size: 10px;
+					//font-weight: 600;
+				}
+				
+			}
 		}
 
 		.header-user-actions {
@@ -807,6 +807,7 @@ body::-webkit-scrollbar-thumb:hover {
 			border-radius: 20px;
 		}
 	}
+	/* #endregion Header */
 
 	.footer-container {
 		ul {
@@ -817,14 +818,8 @@ body::-webkit-scrollbar-thumb:hover {
 		}
 	}
 
-	
-
-	
-
-	
-
 	.desktop-navigation-menu {
-		display: flex;
+		display: none;
 		align-items: center;
 		justify-content: center;
 
@@ -1021,6 +1016,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 	.container {
 		max-width: 1200px;
+		padding: 0 20px;
 	}
 
 
@@ -1036,21 +1032,11 @@ body::-webkit-scrollbar-thumb:hover {
 @media (min-width: 1400px) {
 
 	/**
-   * #BASE 
-   */
-
-	html {
-		font-size: 18px;
-	}
-
-
-
-	/**
    * #REUSED STYLE 
    */
 
 	.container {
-		max-width: 1350px;
+		max-width: 1600px;
 	}
 
 	.footer-container {

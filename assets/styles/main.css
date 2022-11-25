@@ -100,22 +100,19 @@ body {
  * scrollbar style
  */
 body::-webkit-scrollbar {
-  width: 15px;
+  width: 8px;
 }
 
 body::-webkit-scrollbar-track {
   background: white;
-  border-left: 1px solid hsl(0deg, 0%, 93%);
 }
 
 body::-webkit-scrollbar-thumb {
   background: hsl(0deg, 0%, 80%);
-  border: 3px solid var(--white);
-  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: hsl(0deg, 0%, 70%);
+  background: hsl(0deg, 0%, 50%);
 }
 
 .title {
@@ -155,7 +152,14 @@ body::-webkit-scrollbar-thumb:hover {
 .header-top-actions,
 .header-user-actions,
 .desktop-navigation-menu,
-.header-social-container {
+.header-social-container,
+.products-button,
+.account-icon,
+.search-icon-right {
+  display: none;
+}
+
+.container-right p {
   display: none;
 }
 
@@ -196,7 +200,7 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 35px;
   color: var(--eerie-black);
 }
-.header-main .container-left .search-icon {
+.header-main .container-left .search-icon-left {
   margin-left: 10px;
 }
 .header-main img {
@@ -532,8 +536,9 @@ body::-webkit-scrollbar-thumb:hover {
     * #REUSED STYLE 
     */
   .container {
-    max-width: 750px;
+    max-width: 850px;
     margin: auto;
+    padding: 0 10px;
   }
   /**
     * #HEADER 
@@ -546,60 +551,58 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 @media (min-width: 1024px) {
-  /**
-    * #CUSTOM PROPERTY
-    */
-  :root {
-    /**
-       * typography 
-       */
-    --fs-1: 2.625rem;
-    --fs-2: 1.125rem;
-  }
-  /**
-    * #REUSED STYLE 
-    */
   .container {
     max-width: 980px;
   }
-  /**
-    * #NOTIFICATION TOAST 
-    */
-  .notification-toast {
-    bottom: 30px;
+  /* #region Header */
+  .header-top {
+    height: 30px;
   }
-  /**
-    * #HEADER 
-    */
+  .header-top p {
+    font-size: 12px;
+  }
+  .header-main {
+    max-height: 125px;
+  }
   .header-main .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 125px;
   }
-  .header-main .hamburger-menu {
+  .header-main .container .products-button,
+.header-main .container .search-icon-right {
+    display: unset;
+  }
+  .header-main .container .hamburger-menu {
     display: none;
   }
-  .header-main .shopping-bag {
+  .header-main .container .search-icon-left {
     display: none;
   }
-  .header-main .header-logo img {
-    padding: 0px;
+  .header-main .container .products-button p {
+    padding: 15px 0;
+    font-weight: 500;
+    font-size: 18px;
   }
-  .header-main .header-social-container {
+  .header-main .container .products-button .action-btn {
     display: flex;
-    align-items: center;
-    gap: 15px;
+    padding: 0;
   }
-  .header-main .header-social-container .social-link {
-    padding: 14px;
-    background: hsl(0deg, 0%, 95%);
-    border-radius: var(--border-radius-sm);
-    color: var(--sonic-silver);
-    transition: var(--transition-timing);
+  .header-main .container img {
+    width: 125%;
   }
-  .header-main .header-social-container .social-link:hover {
-    background: var(--salmon-pink);
-    color: var(--white);
+  .header-main .container .logo {
+    padding: 0;
+    width: 140px;
+  }
+  .header-main .container .container-right {
+    width: 132.91px;
+    max-width: 132.91px;
+    justify-content: space-between;
+  }
+  .header-main .container .container-right .favorite-icon {
+    margin: 0;
   }
   .header-main .header-user-actions {
     display: flex;
@@ -624,12 +627,13 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 2px 4px;
     border-radius: 20px;
   }
+  /* #endregion Header */
   .footer-container ul p,
 .footer-container ul a {
     padding-left: 20%;
   }
   .desktop-navigation-menu {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
   }
@@ -769,6 +773,7 @@ body::-webkit-scrollbar-thumb:hover {
     */
   .container {
     max-width: 1200px;
+    padding: 0 20px;
   }
   /**
     * #HEADER
@@ -779,16 +784,10 @@ body::-webkit-scrollbar-thumb:hover {
 }
 @media (min-width: 1400px) {
   /**
-    * #BASE 
-    */
-  html {
-    font-size: 18px;
-  }
-  /**
     * #REUSED STYLE 
     */
   .container {
-    max-width: 1350px;
+    max-width: 1600px;
   }
   .footer-container ul p,
 .footer-container ul a {
