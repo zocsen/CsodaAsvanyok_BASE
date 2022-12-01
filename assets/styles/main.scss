@@ -72,11 +72,13 @@
 	--transition-timing: 0.2s ease;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
 
@@ -107,11 +109,16 @@ button {
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0.11);
 }
 
-img, ion-icon, button, a {
+img,
+ion-icon,
+button,
+a {
 	display: block;
 }
 
-span { display: inline-block; }
+span {
+	display: inline-block;
+}
 
 body {
 	background: white;
@@ -203,8 +210,8 @@ body::-webkit-scrollbar-thumb:hover {
 	border-bottom: 1px solid var(--cultured);
 	align-items: center;
 	justify-content: center;
-	background-color:hsl(0, 0%, 13%);
-	
+	background-color: hsl(0, 0%, 13%);
+
 	.header-shipping-info {
 		color: white;
 		font-size: 10px;
@@ -220,8 +227,8 @@ body::-webkit-scrollbar-thumb:hover {
 	max-height: 100px;
 	padding-left: 10px;
 	padding-right: 10px;
-	
-	.container{
+
+	.container {
 		display: -webkit-box;
 		display: -webkit-flex;
 		display: -ms-flexbox;
@@ -235,7 +242,7 @@ body::-webkit-scrollbar-thumb:hover {
 		-ms-flex-align: center;
 		align-items: center;
 	}
-	
+
 	.container-left {
 		display: flex;
 
@@ -248,7 +255,7 @@ body::-webkit-scrollbar-thumb:hover {
 				color: var(--eerie-black);
 			}
 		}
-		
+
 		.search-icon-left {
 			margin-left: 10px;
 		}
@@ -263,7 +270,9 @@ body::-webkit-scrollbar-thumb:hover {
 	.container-right {
 		display: flex;
 
-		.favorite-icon { margin-right: 10px; }
+		.favorite-icon {
+			margin-right: 10px;
+		}
 
 		.shopping-bag {
 			.action-btn {
@@ -295,7 +304,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 .main-container {
 	margin: 0 15px;
-	
+
 
 	.main-title {
 		text-align: center;
@@ -320,6 +329,7 @@ body::-webkit-scrollbar-thumb:hover {
 		button {
 			display: flex;
 			gap: 5px;
+
 			p {
 				font-weight: 600;
 			}
@@ -330,7 +340,7 @@ body::-webkit-scrollbar-thumb:hover {
 		display: grid;
 		grid-gap: 24px 12px;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
-		
+
 		img {
 			aspect-ratio: 1;
 			width: 100%;
@@ -355,13 +365,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #region Mobile Navigation Menu */
 
-/* FIXME
-
-- Mobile nav scrolling
-
-*/
-
-
 .mobile-navigation-menu {
 	background: var(--white);
 	position: fixed;
@@ -369,7 +372,7 @@ body::-webkit-scrollbar-thumb:hover {
 	left: -100%;
 	width: 100%;
 	max-width: 320px;
-	height: auto;
+	height: 110vh;//100%;
 	padding: 20px;
 	-webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
@@ -583,65 +586,66 @@ body::-webkit-scrollbar-thumb:hover {
 /* #endregion Desktop Navigation Menu */
 
 /* #region Footer */
-	.footer-container {
-		margin: 0 15px;
+.footer-container {
+	margin: 0 15px;
 
 
-		.footer-tervezo {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			padding-top: 100px;
-			padding-bottom: 100px;
-			font-size: 20px;
-			text-align: center;
-			width:auto;
-			max-width: 320px;
+	.footer-tervezo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		font-size: 20px;
+		text-align: center;
+		width: auto;
+		max-width: 320px;
 
-			p {
-				padding-bottom: 20px;
-			}
-
-			.tervezo-button {
-				background: var(--bittersweet);
-				padding: 30px;
-				border-radius: var(--border-radius-md);
-				font-weight: 600;
-			}
+		p {
+			padding-bottom: 20px;
 		}
 
-		ul {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-gap: 50px 20px;
-			gap: 50px 20px;
-			padding-bottom: 100px;
-			border-bottom: 1px solid #dddee0;
-			font-size: 14px;
+		.tervezo-button {
+			background: var(--bittersweet);
+			padding: 30px;
+			border-radius: var(--border-radius-md);
+			font-weight: 600;
+		}
+	}
 
-			p {
-				font-weight: 700;
-				padding-bottom: 20px;
-				font-size: 15px;
+	ul {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 50px 20px;
+		gap: 50px 20px;
+		padding-bottom: 100px;
+		border-bottom: 1px solid #dddee0;
+		font-size: 14px;
+
+		p {
+			font-weight: 700;
+			padding-bottom: 20px;
+			font-size: 15px;
+		}
+
+		a {
+			padding-bottom: 12px;
+			display: flex;
+
+			ion-icon {
+				font-size: 24px;
 			}
 
-			a {
-				padding-bottom: 12px;
-				display: flex;
-
-				ion-icon {
-					font-size: 24px;
-				}
-
-				p {
-					font-weight: 500;
-					padding: 0;
-					margin-top: 3px;
-					margin-left: 7px;
-				}
+			p {
+				font-weight: 500;
+				padding: 0;
+				margin-top: 3px;
+				margin-left: 7px;
 			}
 		}
 	}
+}
+
 /* #endregion Footer */
 
 /* #region Responsive */
@@ -655,14 +659,15 @@ body::-webkit-scrollbar-thumb:hover {
 
 @media (min-width: 600px) {
 	.main-container .product-container {
-			grid-template-columns: repeat(3, minmax(0, 1fr));
-		}
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+	}
 
 	.footer-container {
 		ul {
 			grid-template-columns: 1fr 1fr 1fr;
-			
-			p, a {
+
+			p,
+			a {
 				padding-left: 10%;
 			}
 		}
@@ -689,11 +694,11 @@ body::-webkit-scrollbar-thumb:hover {
 		gap: 80px;
 	}
 
-	.main-container .product-container{
+	.main-container .product-container {
 		grid-template-columns: repeat(4, minmax(0, 1fr));
 	}
 
-	
+
 }
 
 @media (min-width: 1024px) {
@@ -705,15 +710,15 @@ body::-webkit-scrollbar-thumb:hover {
 	/* #region Header */
 	.header-top {
 		height: 30px;
-		
+
 		p {
 			font-size: 12px;
 		}
 	}
 
-    .header-main {
+	.header-main {
 		max-height: 125px;
-		
+
 
 		.container {
 			display: -webkit-box;
@@ -732,7 +737,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 			.products-button,
 			.search-icon-right {
-				display:unset;
+				display: unset;
 			}
 
 			.hamburger-menu {
@@ -768,7 +773,7 @@ body::-webkit-scrollbar-thumb:hover {
 				padding: 0;
 				width: 140px;
 			}
-			
+
 			.container-right {
 				width: 132.91px;
 				max-width: 132.91px;
@@ -783,7 +788,7 @@ body::-webkit-scrollbar-thumb:hover {
 					//font-size: 10px;
 					//font-weight: 600;
 				}
-				
+
 			}
 		}
 
@@ -820,10 +825,12 @@ body::-webkit-scrollbar-thumb:hover {
 			border-radius: 20px;
 		}
 	}
+
 	/* #endregion Header */
 
 	.footer-container {
 		ul {
+
 			p,
 			a {
 				padding-left: 20%;
@@ -838,7 +845,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 		.desktop-menu-category-list {
 			display: inline-block;
-			
+
 		}
 
 		a {
@@ -847,7 +854,7 @@ body::-webkit-scrollbar-thumb:hover {
 		}
 	}
 
-	
+
 
 	.desktop-menu-category-list .menu-category:not(:nth-child(2)) {
 		position: relative;
@@ -1063,4 +1070,5 @@ body::-webkit-scrollbar-thumb:hover {
 	}
 
 }
+
 /* #endregion Responsive */
