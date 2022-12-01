@@ -22,7 +22,9 @@ for (let i = 0; i < mobileMenuOpenBtn.length; i++) {
   mobileMenuCloseBtn[i].addEventListener('click', mobileMenuCloseFunc);
   overlay.addEventListener('click', mobileMenuCloseFunc);
 
+  break;  
 }
+
 
 // accordion variables
 const accordionBtn = document.querySelectorAll('[data-accordion-btn]');
@@ -32,6 +34,8 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
   accordionBtn[i].addEventListener('click', function () {
     
+    console.log("hello");
+
     const clickedBtn = this.nextElementSibling.classList.contains('active');
 
     for (let i = 0; i < accordion.length; i++) {
