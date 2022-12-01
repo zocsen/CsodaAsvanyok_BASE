@@ -285,6 +285,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #endregion Bracelets Page */
 /* #region Mobile Navigation Menu */
+/* FIXME
+
+- Mobile nav scrolling
+
+*/
 .mobile-navigation-menu {
   background: var(--white);
   position: fixed;
@@ -292,7 +297,7 @@ body::-webkit-scrollbar-thumb:hover {
   left: -100%;
   width: 100%;
   max-width: 320px;
-  height: 100%;
+  height: auto;
   padding: 20px;
   box-shadow: 0 0 10px hsla(0deg, 0%, 0%, 0.1);
   overflow-y: scroll;
