@@ -461,6 +461,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* #endregion Mobile Navigation Menu */
+/* #region Desktop Navigation Menu */
+/* #endregion Desktop Navigation Menu */
 /* #region Footer */
 .footer-container {
   margin: 0 15px;
@@ -787,7 +789,7 @@ body::-webkit-scrollbar-thumb:hover {
     * #REUSED STYLE 
     */
   .container {
-    max-width: 1400px;
+    max-width: 1500px;
   }
   .footer-container ul p,
 .footer-container ul a {
