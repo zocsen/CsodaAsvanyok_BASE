@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb:hover {
   box-shadow: 0 0 10px hsla(0deg, 0%, 0%, 0.1);
   overflow-y: scroll;
   -ms-scroll-chaining: none;
-  overscroll-behavior: contain;
+      overscroll-behavior: contain;
   visibility: hidden;
   transition: 0.5s ease;
   z-index: 20;
@@ -450,6 +450,7 @@ body::-webkit-scrollbar-thumb:hover {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding-bottom: 100px;
 }
 
 .menu-social-container .social-link {

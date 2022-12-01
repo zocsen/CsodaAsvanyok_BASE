@@ -367,7 +367,6 @@ body::-webkit-scrollbar-thumb:hover {
 	-webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	overflow-y: scroll;
-	-ms-scroll-chaining: none;
 	overscroll-behavior: contain;
 	visibility: hidden;
 	-webkit-transition: 0.5s ease;
@@ -558,6 +557,7 @@ body::-webkit-scrollbar-thumb:hover {
 	-ms-flex-align: center;
 	align-items: center;
 	gap: 10px;
+	padding-bottom: 100px;
 }
 
 .menu-social-container .social-link {
