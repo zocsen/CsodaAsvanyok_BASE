@@ -215,7 +215,7 @@ body::-webkit-scrollbar-thumb:hover {
 	.header-shipping-info {
 		color: white;
 		font-size: 10px;
-		font-weight: 100;
+		font-weight: 400;
 		text-transform: uppercase;
 		align-items: center;
 	}
@@ -377,7 +377,7 @@ body::-webkit-scrollbar-thumb:hover {
 	width: 100%;
 	max-width: 320px;
 	height: 100vh;
-	padding: 20px;
+	padding: 20px 20px 200px 20px; //TODO
 	-webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	overflow-y: scroll;
@@ -585,13 +585,30 @@ body::-webkit-scrollbar-thumb:hover {
 /* #endregion Mobile Navigation Menu */
 
 /* #region Desktop Navigation Menu */
-
+//TODO Desktop Nav Panel
 /* #endregion Desktop Navigation Menu */
 
+/* #region Search Bar Menu */
+//TODO Search Bar Menu
+/* #endregion Search Bar Menu */
+
+/* #region Favorites Menu */
+//TODO Favorites Menu
+/* #endregion Favorites Menu */
+
+/* #region Shopping Bag Menu */
+//TODO Shopping Bag Menu
+/* #endregion Shopping Bag Menu */
+
 /* #region Footer */
+
+//TODO E-mail capture on the bottom
+//TODO Back to the top button on the bottom of the page
+//TODO CsodaÁsványok 2022 - minden jog fenntartva.
+//TODO Payment options
+
 .footer-container {
 	margin: 0 15px;
-
 
 	.footer-tervezo {
 		display: block;
@@ -652,6 +669,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* #endregion Footer */
 
 /* #region Responsive */
+
 @media (min-width: 360px) {
 	.footer-container {
 		ul {
@@ -1075,3 +1093,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 /* #endregion Responsive */
+
+
+//TODO Future projects
+
+// Homepage
+// Filtering
+// Sorting
+
+
