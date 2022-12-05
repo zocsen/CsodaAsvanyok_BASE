@@ -229,15 +229,15 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 25px;
-  font-size: 2rem;
-  font-weight: 800;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 .main-container .sort-section {
   display: flex;
   vertical-align: middle;
   justify-content: space-between;
   font-weight: 400;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   padding-bottom: 30px;
 }
 .main-container .sort-section p {
@@ -263,12 +263,12 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .main-container .product-container h2 {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   padding-top: 10px;
   padding-bottom: 5px;
 }
 .main-container .product-container p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
 }
 
 /* #endregion Bracelets Page */
@@ -652,7 +652,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .header-main .desktop-navigation-menu .menu-category .menu-title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 20px;
     color: var(--eerie-black);
   }
@@ -679,7 +679,7 @@ body::-webkit-scrollbar-thumb:hover {
     transition-delay: 0.8s;
   }
   .header-main .desktop-navigation-menu .menu-category li a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .header-main .desktop-navigation-menu .menu-category .sale-products {
     color: red;

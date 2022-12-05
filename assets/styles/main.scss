@@ -203,6 +203,7 @@ body::-webkit-scrollbar-thumb:hover {
 	max-height: 100px;
 	padding-left: 10px;
 	padding-right: 10px;
+	
 
 	.container {
 		display: -webkit-box;
@@ -285,8 +286,8 @@ body::-webkit-scrollbar-thumb:hover {
 		text-align: center;
 		margin-top: 35px;
 		margin-bottom: 25px;
-		font-size: 2rem;
-		font-weight: 800;
+		font-size: 2.2rem;
+		font-weight: 700;
 	}
 
 	.sort-section {
@@ -294,7 +295,7 @@ body::-webkit-scrollbar-thumb:hover {
 		vertical-align: middle;
 		justify-content: space-between;
 		font-weight: 400;
-		font-size: 1.4rem;
+		font-size: 1.6rem;
 		padding-bottom: 30px;
 
 		p {
@@ -325,13 +326,13 @@ body::-webkit-scrollbar-thumb:hover {
 
 		h2 {
 			font-weight: 600;
-			font-size: 1.4rem;
+			font-size: 1.7rem;
 			padding-top: 10px;
 			padding-bottom: 5px;
 		}
 
 		p {
-			font-size: 1.2rem;
+			font-size: 1.6rem;
 		}
 	}
 }
@@ -866,7 +867,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 				.menu-title {
 					font-weight: 700;
-					font-size: 20px;
+					font-size: 18px;
 					padding-bottom: 20px;
 					color: var(--eerie-black);
 				}
@@ -885,7 +886,7 @@ body::-webkit-scrollbar-thumb:hover {
 					&:nth-of-type(5) {transition-delay: .8s;}
 				
 					a {
-						font-size: 18px;
+						font-size: 16px;
 					}
 				}
 
@@ -996,7 +997,7 @@ body::-webkit-scrollbar-thumb:hover {
 // Homepage
 // Filtering
 // Sorting - - - Majd a sorting maradjon fixen az oldal bal/jobb oldalán, csak a termékek menjenek föl-le //sidebar//
-
+// Sticky Header?
 
 /* #endregion TODO Future projects */
 
