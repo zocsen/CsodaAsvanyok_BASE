@@ -263,7 +263,7 @@ body::-webkit-scrollbar-thumb:hover {
 				position: absolute;
 				top: 3px;
 				right: -6px;
-				font-size: 1.2rem;
+				font-size: 12px;
 				font-weight: 500;
 				line-height: 1;
 				padding: 2px 4px;
@@ -456,6 +456,14 @@ body::-webkit-scrollbar-thumb:hover {
 	display: block;
 }
 
+.menu-category {
+	.sale-products {
+		color: red;
+		font-weight: 700;
+	}
+}
+
+
 .menu-category .submenu-category-list {
 	margin-left: 10px;
 }
@@ -481,7 +489,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .submenu-category-list.active {
-	max-height: 148px;
+	max-height: 200px;
 	visibility: visible;
 }
 
@@ -726,7 +734,7 @@ body::-webkit-scrollbar-thumb:hover {
 				p {
 					padding: 15px 0;
 					font-weight: 500;
-					font-size: 1.8rem;
+					font-size: 18px;
 				}
 
 				.action-btn {
@@ -798,6 +806,11 @@ body::-webkit-scrollbar-thumb:hover {
 
 	/* #endregion Header */
 
+	.main-container .product-container {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+
 	.footer-container {
 		ul {
 			p, a {padding-left: 20%;}
@@ -853,7 +866,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 				.menu-title {
 					font-weight: 700;
-					font-size: 1.7rem;
+					font-size: 20px;
 					padding-bottom: 20px;
 					color: var(--eerie-black);
 				}
@@ -872,8 +885,37 @@ body::-webkit-scrollbar-thumb:hover {
 					&:nth-of-type(5) {transition-delay: .8s;}
 				
 					a {
-						font-size: 2rem;
+						font-size: 18px;
 					}
+				}
+
+				.sale-products {
+					color: red;
+					font-weight: 700;
+				}
+
+				.hover-underline-animation {
+					display: inline-block;
+					position: relative;
+				}
+
+				.hover-underline-animation::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					transform: scaleX(0);
+					height: 2px;
+					bottom: 0;
+					left: 0;
+					margin-bottom: -2px;
+					background-color: var(--eerie-black);
+					transform-origin: bottom right;
+					transition: transform 0.25s ease-out;
+				}
+
+				.hover-underline-animation:hover::after {
+					transform: scaleX(1);
+					transform-origin: bottom left;
 				}
 			}
 		}

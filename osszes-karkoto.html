@@ -25,7 +25,6 @@
 
 	<!-- #region Header -->
 	<header>
-		<!-- #region Shipping info -->
 		<div class="header-top">
 			<div class="container">
 				<div class="header-shipping-info">
@@ -33,7 +32,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- #endregion Shipping info -->
 
 		<!-- #region Main Header -->
 		<div class="header-main">
@@ -66,11 +64,17 @@
 								<a href="#" class="menu-title">NEKED AJÁNLJUK</a>
 								<div class="dropdown-panel">
 									<ul class="dropdown-panel-list">
-										<li class="panel-list-item"><a href="#">Karácsony</a>
+										<li class="panel-list-item"><a href="#"
+												class="hover-underline-animation">Karácsony &#127876;</a>
 										</li>
-										<li class="panel-list-item"><a href="#">Valentin nap</a></li>
-										<li class="panel-list-item"><a href="#">Horoszkóp</a></li>
-										<li class="panel-list-item"><a href="#">Akciós termékek</a></li>
+										<li class="panel-list-item"><a href="#"
+												class="hover-underline-animation">Valentin nap &#128149;</a></li>
+										<li class="panel-list-item"><a href="#"
+												class="hover-underline-animation">Horoszkóp &#9803;</a></li>
+										<li class="panel-list-item"><a href="#"
+												class="sale-products hover-underline-animation">Akciós
+												termékek&#128227;</a>
+										</li>
 									</ul>
 								</div>
 							</li>
@@ -82,12 +86,15 @@
 								<a href="#" class="menu-title">KARKÖTŐK</a>
 								<div class="dropdown-panel">
 									<ul class="dropdown-panel-list">
-										<li class="panel-list-item"><a href="osszes-karkoto.html">Összes karkötő</a>
+										<li class="panel-list-item"><a href="osszes-karkoto.html"
+												class="hover-underline-animation">Összes karkötő</a>
 										</li>
-										<li class="panel-list-item"><a href="#">Női karkötők</a></li>
-										<li class="panel-list-item"><a href="#">Férfi karkötők</a></li>
-										<li class="panel-list-item"><a href="#">Páros karkötők</a></li>
-										<li class="panel-list-item"><a href="#">Karkötő tervező</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Női
+												karkötők</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Férfi
+												karkötők</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Páros
+												karkötők</a></li>
 									</ul>
 								</div>
 							</li>
@@ -99,10 +106,14 @@
 								<a href="#" class="menu-title">NYAKLÁNCOK</a>
 								<div class="dropdown-panel">
 									<ul class="dropdown-panel-list">
-										<li class="panel-list-item"><a href="#">Összes nyaklánc</a></li>
-										<li class="panel-list-item"><a href="#">Nyakláncok</a></li>
-										<li class="panel-list-item"><a href="#">Gyűrűk</a></li>
-										<li class="panel-list-item"><a href="#">Fülbevalók</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Összes
+												nyaklánc</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Női
+												nyakláncok</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Férfi
+												nyakláncok</a></li>
+										<li class="panel-list-item"><a href="#" class="hover-underline-animation">Páros
+												nyakláncok</a></li>
 									</ul>
 								</div>
 							</li>
@@ -160,15 +171,8 @@
 
 				</div>
 			</div>
-
 		</div>
 		<!-- #endregion Main Header -->
-
-		<!-- #region Desktop Navigation -->
-		<div class="container">
-
-		</div>
-		<!-- #endregion Desktop Navigation -->
 
 		<!-- #region Mobile Navigation -->
 		<nav class="mobile-navigation-menu" data-mobile-menu>
@@ -184,12 +188,31 @@
 			<ul class="mobile-menu-category-list">
 
 				<!-- NEW -->
-				<li class="menu-category"><a href="#" class="menu-title">Kollekciók</a></li>
+				<li class="menu-category">
+					<button class="accordion-menu" data-accordion-btn>
+						<p class="menu-title">Népszerűek &#128293;</p>
+
+						<div>
+							<ion-icon name="add-outline" class="add-icon"></ion-icon>
+							<ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+						</div>
+					</button>
+
+					<ul class="submenu-category-list" data-accordion>
+						<li class="submenu-category"><a href="osszes-karkoto.html" class="submenu-title">Karácsony
+								&#127876;</a></li>
+						<li class="submenu-category"><a href="#" class="submenu-title">Valentin nap &#128149;</a></li>
+						<li class="submenu-category"><a href="#" class="submenu-title">Horoszkóp &#9803;</a></li>
+						<li class="submenu-category"><a href="#" class="submenu-title sale-products">Akciós
+								termékek
+								&#128227;</a></li>
+					</ul>
+				</li>
 
 				<!-- MAN'S -->
 				<li class="menu-category">
 					<button class="accordion-menu" data-accordion-btn>
-						<p class="menu-title">Karkötők</p>
+						<p class="menu-title">Karkötők &#128588;</p>
 
 						<div>
 							<ion-icon name="add-outline" class="add-icon"></ion-icon>
@@ -211,7 +234,7 @@
 				<!-- WOMEN's -->
 				<li class="menu-category">
 					<button class="accordion-menu" data-accordion-btn>
-						<p class="menu-title">Nyakláncok</p>
+						<p class="menu-title">Nyakláncok &#128255;</p>
 
 						<div>
 							<ion-icon name="add-outline" class="add-icon"></ion-icon>
@@ -229,19 +252,22 @@
 				</li>
 
 				<!-- DECORATION -->
-				<li class="menu-category"><a href="#" class="menu-title">Dekorációk</a></li>
+				<li class="menu-category"><a href="#" class="menu-title">Marokkövek &#128142;</a></li>
 
 				<!-- MINERALS -->
-				<li class="menu-category"><a href="#" class="menu-title">Ásványok</a></li>
+				<li class="menu-category"><a href="#" class="menu-title">Dekorációk &#127885;</a></li>
 
 				<!-- AKCIO -->
-				<li class="menu-category"><a href="#" class="menu-title">Akció</a></li>
+				<li class="menu-category"><a href="#" class="menu-title sale-products">Akciós termékek &#128227;</a>
+				</li>
 
 				<!-- BUILDER -->
-				<li class="menu-category"><a href="tervezo.html" class="menu-title">Ékszer tervező</a></li>
+				<li class="menu-category"><a href="tervezo.html" class="menu-title ">Ékszer tervező
+						&#128736;&#65039;</a>
+				</li>
 
 				<!-- BLOG -->
-				<li class="menu-category"><a href="#" class="menu-title">Blog</a></li>
+				<li class="menu-category"><a href="#" class="menu-title">Blogunk &#128221;</a></li>
 			</ul>
 
 			<div class="menu-bottom">
@@ -273,6 +299,7 @@
 			</div>
 		</nav>
 		<!-- #endregion Mobile Navigation -->
+
 	</header>
 	<!-- #endregion Header -->
 

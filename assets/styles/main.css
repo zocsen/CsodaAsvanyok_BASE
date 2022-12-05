@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: absolute;
   top: 3px;
   right: -6px;
-  font-size: 1.2rem;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1;
   padding: 2px 4px;
@@ -365,6 +365,11 @@ body::-webkit-scrollbar-thumb:hover {
   display: block;
 }
 
+.menu-category .sale-products {
+  color: red;
+  font-weight: 700;
+}
+
 .menu-category .submenu-category-list {
   margin-left: 10px;
 }
@@ -388,7 +393,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .submenu-category-list.active {
-  max-height: 148px;
+  max-height: 200px;
   visibility: visible;
 }
 
@@ -558,7 +563,7 @@ body::-webkit-scrollbar-thumb:hover {
   .header-main .container .products-button p {
     padding: 15px 0;
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: 18px;
   }
   .header-main .container .products-button .action-btn {
     display: flex;
@@ -603,6 +608,9 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: 20px;
   }
   /* #endregion Header */
+  .main-container .product-container {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .footer-container ul p, .footer-container ul a {
     padding-left: 20%;
   }
@@ -644,7 +652,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .header-main .desktop-navigation-menu .menu-category .menu-title {
     font-weight: 700;
-    font-size: 1.7rem;
+    font-size: 20px;
     padding-bottom: 20px;
     color: var(--eerie-black);
   }
@@ -671,7 +679,32 @@ body::-webkit-scrollbar-thumb:hover {
     transition-delay: 0.8s;
   }
   .header-main .desktop-navigation-menu .menu-category li a {
-    font-size: 2rem;
+    font-size: 18px;
+  }
+  .header-main .desktop-navigation-menu .menu-category .sale-products {
+    color: red;
+    font-weight: 700;
+  }
+  .header-main .desktop-navigation-menu .menu-category .hover-underline-animation {
+    display: inline-block;
+    position: relative;
+  }
+  .header-main .desktop-navigation-menu .menu-category .hover-underline-animation::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    margin-bottom: -2px;
+    background-color: var(--eerie-black);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .header-main .desktop-navigation-menu .menu-category .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 }
 @media (min-width: 1200px) {
