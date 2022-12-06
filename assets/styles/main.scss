@@ -341,8 +341,8 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #region Mobile Navigation Menu */
 
-//FIXME Have better optimalization for scrolling and the height
 //TODO Add e-mail capture to the mobile navigation (bottom)
+
 
 
 .mobile-navigation-menu {
@@ -353,7 +353,7 @@ body::-webkit-scrollbar-thumb:hover {
 	width: 100%;
 	max-width: 320px;
 	height: 100vh;
-	padding: 20px 20px 200px 20px; //TODO
+	padding: 20px 20px 200px 20px;
 	-webkit-box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
 	overflow-y: scroll;
@@ -547,24 +547,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #endregion Mobile Navigation Menu */
 
-/* #region Search Bar Menu */
-//TODO Search Bar Menu
-/* #endregion Search Bar Menu */
-
-/* #region Favorites Menu */
-//TODO Favorites Menu
-/* #endregion Favorites Menu */
-
-/* #region Shopping Bag Menu */
-//TODO Shopping Bag Menu
-/* #endregion Shopping Bag Menu */
-
 /* #region Footer */
-
-//TODO E-mail capture on the bottom
-//TODO Back to the top button on the bottom of the page
-//TODO CsodaÁsványok 2022 - minden jog fenntartva.
-//TODO Payment options
 
 .footer-container {
 	margin: 0 15px;
@@ -735,7 +718,7 @@ body::-webkit-scrollbar-thumb:hover {
 				p {
 					padding: 15px 0;
 					font-weight: 500;
-					font-size: 18px;
+					font-size: 22px;
 				}
 
 				.action-btn {
@@ -754,8 +737,8 @@ body::-webkit-scrollbar-thumb:hover {
 			}
 
 			.container-right {
-				width: 132.91px;
-				max-width: 132.91px;
+				width: 155.78px;
+				max-width: 155.78px;
 				justify-content: space-between;
 
 				.favorite-icon {
@@ -805,20 +788,6 @@ body::-webkit-scrollbar-thumb:hover {
 		}
 	}
 
-	/* #endregion Header */
-
-	.main-container .product-container {
-		grid-template-columns: repeat(5, minmax(0, 1fr));
-	}
-
-
-	.footer-container {
-		ul {
-			p, a {padding-left: 20%;}
-		}
-	}
-
-
 	/* #region Desktop Navigation Menu */
 
 	.header-main {
@@ -826,14 +795,14 @@ body::-webkit-scrollbar-thumb:hover {
 		.container-left {
 			height: 125px;
 
-			.products-button{
+			.products-button {
 				margin: auto 0;
 			}
 
-			&:hover img {
-					transform: rotateZ(180deg);
-					transition: transform .7s;
-				}
+			&:hover .product-arrow {
+				transform: rotateZ(180deg);
+				transition: transform .7s;
+			}
 
 			&:hover .desktop-navigation-menu {
 				transform: translateY(45%);
@@ -856,35 +825,55 @@ body::-webkit-scrollbar-thumb:hover {
 			padding: 10px;
 			background-color: #fff;
 			box-shadow: 0 0 50px 0 rgb(0 0 0 / 15%), 0 100px 100px 0 rgb(0 0 0 / 5%);
-			
+
 			visibility: hidden;
 
 			transform: translateY(-500%); //150%
 			transition: transform .3s;
-			
+
 			.menu-category {
-				padding: 30px;
+				padding: 25px;
 
 				.menu-title {
-					font-weight: 700;
+					font-weight: 600;
 					font-size: 18px;
-					padding-bottom: 20px;
+					padding-bottom: 10px;
 					color: var(--eerie-black);
 				}
-				
+
+				//FIXME #Priority: Desktop navigation menu to have stone and decoration pictures
+				.stone-category {
+					max-width: 140px;
+					max-height: 140px;
+				}
+
 				li {
 					padding-bottom: 10px;
 					opacity: 0;
 					transition: transform .5s, opacity .5s;
 					transition-delay: .3s;
 					transform: translateY(40px);
-				
-					&:nth-of-type(1) {transition-delay: .4s;}
-					&:nth-of-type(2) {transition-delay: .5s;}
-					&:nth-of-type(3) {transition-delay: .6s;}
-					&:nth-of-type(4) {transition-delay: .7s;}
-					&:nth-of-type(5) {transition-delay: .8s;}
-				
+
+					&:nth-of-type(1) {
+						transition-delay: .4s;
+					}
+
+					&:nth-of-type(2) {
+						transition-delay: .5s;
+					}
+
+					&:nth-of-type(3) {
+						transition-delay: .6s;
+					}
+
+					&:nth-of-type(4) {
+						transition-delay: .7s;
+					}
+
+					&:nth-of-type(5) {
+						transition-delay: .8s;
+					}
+
 					a {
 						font-size: 16px;
 					}
@@ -921,6 +910,24 @@ body::-webkit-scrollbar-thumb:hover {
 			}
 		}
 	}
+
+/* #endregion Header */
+
+	
+
+
+	.main-container .product-container {
+		grid-template-columns: repeat(5, minmax(0, 1fr));
+	}
+
+	.footer-container {
+		ul {
+			p, a {padding-left: 20%;}
+		}
+	}
+
+
+	
 	
 	
 	
@@ -988,16 +995,34 @@ body::-webkit-scrollbar-thumb:hover {
 /* #endregion Responsive */
 
 
-/* #region TODO Future projects */
+// FIXME
+
+// Header shopping bag counter is in the wrong place
+
+
+
 
 // TODO
 
 // Bracelet's page
-// Checkout Page
 // Homepage
 // Filtering
 // Sorting - - - Majd a sorting maradjon fixen az oldal bal/jobb oldalán, csak a termékek menjenek föl-le //sidebar//
+// x/x products shown
+
+
+// #HEADER
+// Checkout Page
+// Search menu
+// Favorites menu
 // Sticky Header?
 
-/* #endregion TODO Future projects */
+
+// #FOOTER
+// E-mail capture on the bottom
+// Back to the top button on the bottom of the page
+// CsodaÁsványok 2022 - minden jog fenntartva.
+// Payment options
+
+
 
