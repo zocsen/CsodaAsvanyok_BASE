@@ -316,12 +316,24 @@ body::-webkit-scrollbar-thumb:hover {
 		display: grid;
 		grid-gap: 24px 12px;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
+		
+		.zoom {
+			overflow: hidden;
+		}
 
 		img {
 			aspect-ratio: 1;
 			width: 100%;
 			height: auto;
 			filter: drop-shadow(1px 1px 4px rgba(0, 0, 0, 0.50));
+			transition: transform 1.5s, filter 1.5s ease-in-out;
+			filter: brightness(90%);
+		}
+
+		img:hover {
+			transform: scale(1.2);
+			filter: brightness(100%);
+			/* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 		}
 
 		h2 {
@@ -804,8 +816,12 @@ body::-webkit-scrollbar-thumb:hover {
 				transition: transform .7s;
 			}
 
+			&:hover .background-layer {
+				visibility: visible;
+			}
+
 			&:hover .desktop-navigation-menu {
-				transform: translateY(45%);
+				transform: translateY(49%);
 				visibility: visible;
 			}
 
@@ -813,6 +829,22 @@ body::-webkit-scrollbar-thumb:hover {
 				transform: translateY(0);
 				opacity: 1;
 			}
+
+			.background-layer:hover {
+				visibility: hidden;
+			}
+		}
+
+		.background-layer {
+			position:absolute;
+			background-image: linear-gradient(black, rgb(255, 255, 255));
+			left: 0;
+			opacity: 40%;
+			margin-top: 125px;
+			margin-left: 0;
+			width:100%;
+			height: 100vh;
+			visibility: hidden;
 		}
 
 		.desktop-navigation-menu {
@@ -828,7 +860,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 			visibility: hidden;
 
-			transform: translateY(-500%); //150%
+			transform: translateY(-500%);
 			transition: transform .3s;
 
 			.menu-category {
@@ -913,8 +945,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 /* #endregion Header */
 
-	
-
 
 	.main-container .product-container {
 		grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -925,15 +955,6 @@ body::-webkit-scrollbar-thumb:hover {
 			p, a {padding-left: 20%;}
 		}
 	}
-
-
-	
-	
-	
-	
-	
-
-	
 
 }
 
@@ -987,7 +1008,12 @@ body::-webkit-scrollbar-thumb:hover {
 	}
 
 	.header-main .desktop-navigation-menu {
-		width: 1360px;
+		width: 1460px;
+		max-width: 1460px;
+
+		.menu-category {
+			padding: 30px;
+		}
 	}
 
 }
@@ -1003,8 +1029,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 // TODO
-
-// Bracelet's page
+// Outline on hover (buttons mostly)
 // Homepage
 // Filtering
 // Sorting - - - Majd a sorting maradjon fixen az oldal bal/jobb oldalán, csak a termékek menjenek föl-le //sidebar//
