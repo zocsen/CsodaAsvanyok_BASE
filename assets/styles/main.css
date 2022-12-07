@@ -9,6 +9,8 @@
      */
   --brown: #A54A2F;
   --pink: #FDE8E1;
+  --hover-grey: rgb(234, 234, 234);
+  --hover-pink: #ffd9cd;
   --spanish-gray: hsl(0, 0%, 60%);
   --sonic-silver: hsl(0, 0%, 47%);
   --eerie-black: hsl(0, 0%, 13%);
@@ -212,7 +214,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--white);
   position: absolute;
   top: 3px;
-  right: -6px;
+  right: -12px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
@@ -227,8 +229,8 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .main-container .main-title {
   text-align: center;
-  margin-top: 35px;
-  margin-bottom: 25px;
+  padding-top: 55px;
+  padding-bottom: 50px;
   font-size: 2.2rem;
   font-weight: 700;
 }
@@ -242,13 +244,20 @@ body::-webkit-scrollbar-thumb:hover {
 }
 .main-container .sort-section p {
   line-height: 30px;
+  padding: 10px;
 }
 .main-container .sort-section button {
   display: flex;
   gap: 5px;
+  padding: 10px;
 }
 .main-container .sort-section button p {
   font-weight: 600;
+  padding: 0;
+}
+.main-container .sort-section button:hover {
+  background-color: var(--hover-grey);
+  border-radius: var(--border-radius-md);
 }
 .main-container .product-container {
   display: grid;
@@ -554,69 +563,39 @@ body::-webkit-scrollbar-thumb:hover {
     align-items: center;
     height: 125px;
   }
-  .header-main .container .products-button,
-.header-main .container .search-icon-right {
+  .header-main .products-button,
+.header-main .search-icon-right {
     display: unset;
   }
-  .header-main .container .hamburger-menu {
+  .header-main .hamburger-menu,
+.header-main .search-icon-left {
     display: none;
   }
-  .header-main .container .search-icon-left {
-    display: none;
-  }
-  .header-main .container .products-button p {
-    padding: 15px 0;
-    font-weight: 500;
-    font-size: 22px;
-  }
-  .header-main .container .products-button .action-btn {
-    display: flex;
-    padding: 0;
-  }
-  .header-main .container img {
+  .header-main img {
     width: 125%;
   }
-  .header-main .container .logo {
+  .header-main .logo {
     padding: 0;
     width: 140px;
   }
-  .header-main .container .container-right {
-    width: 155.78px;
-    max-width: 155.78px;
-    justify-content: space-between;
-  }
-  .header-main .container .container-right .favorite-icon {
-    margin: 0;
-  }
-  .header-main .header-user-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  .header-main .header-user-actions .action-btn {
-    position: relative;
-    font-size: 3.5rem;
-    color: var(--onyx);
-    padding: 5px;
-  }
-  .header-main .header-user-actions .count {
-    position: absolute;
-    top: -2px;
-    right: -3px;
-    background: var(--bittersweet);
-    color: white;
-    font-size: 1.2rem;
+  .header-main .products-button p {
+    padding: 15px 7px 15px 12px;
     font-weight: 500;
-    line-height: 1;
-    padding: 2px 4px;
-    border-radius: 20px;
+    font-size: 22px;
   }
-  /* #region Desktop Navigation Menu */
+  .header-main .products-button .action-btn {
+    display: flex;
+    padding: 0;
+  }
   .header-main .container-left {
-    height: 125px;
+    height: 60px;
   }
   .header-main .container-left .products-button {
     margin: auto 0;
+  }
+  .header-main .container-left:hover .products-button {
+    background-color: var(--hover-pink);
+    border-radius: var(--border-radius-md);
   }
   .header-main .container-left:hover .product-arrow {
     transform: rotateZ(180deg);
@@ -635,6 +614,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .header-main .container-left .background-layer:hover {
     visibility: hidden;
+  }
+  .header-main .container-left:hover {
+    height: 125px;
   }
   .header-main .background-layer {
     position: absolute;
@@ -724,9 +706,96 @@ body::-webkit-scrollbar-thumb:hover {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+  .header-main .container-right {
+    width: 240px;
+    max-width: 240px;
+    justify-content: space-between;
+  }
+  .header-main .container-right .search-icon-right {
+    width: 60px;
+    max-width: 60px;
+    text-align: center;
+  }
+  .header-main .container-right .search-icon-right img {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .header-main .container-right .search-icon-right:hover {
+    background-color: var(--hover-pink);
+    border-radius: var(--border-radius-md);
+  }
+  .header-main .container-right .favorite-icon {
+    width: 60px;
+    max-width: 60px;
+    margin: 0;
+    text-align: center;
+  }
+  .header-main .container-right .favorite-icon img {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .header-main .container-right .favorite-icon:hover {
+    background-color: var(--hover-pink);
+    border-radius: var(--border-radius-md);
+  }
+  .header-main .container-right .shopping-bag {
+    width: 60px;
+    max-width: 60px;
+    text-align: center;
+    align-content: center;
+    position: relative;
+    top: -4px;
+  }
+  .header-main .container-right .shopping-bag img {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+  }
+  .header-main .container-right .shopping-bag:hover {
+    background-color: var(--hover-pink);
+    border-radius: var(--border-radius-md);
+  }
+  .header-main .container-right p {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .header-main .header-user-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .header-main .header-user-actions .action-btn {
+    position: relative;
+    font-size: 3.5rem;
+    color: var(--onyx);
+    padding: 5px;
+  }
+  .header-main .header-user-actions .count {
+    position: absolute;
+    top: -2px;
+    right: -3px;
+    background: var(--bittersweet);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+  }
   /* #endregion Header */
+  .main-container .main-title {
+    padding-top: 70px;
+    font-size: 2.8rem;
+  }
+  .main-container .sort-section {
+    padding-bottom: 45px;
+  }
   .main-container .product-container {
     grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-gap: 40px 20px;
   }
   .footer-container ul p, .footer-container ul a {
     padding-left: 20%;
