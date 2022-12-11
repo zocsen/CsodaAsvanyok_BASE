@@ -214,7 +214,7 @@ body::-webkit-scrollbar-thumb:hover {
   color: var(--white);
   position: absolute;
   top: 3px;
-  right: -12px;
+  right: -8px;
   font-size: 12px;
   font-weight: 500;
   line-height: 1;
@@ -278,7 +278,13 @@ body::-webkit-scrollbar-thumb:hover {
 .main-container .product-container img:hover {
   transform: scale(1.2);
   filter: brightness(100%);
-  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.main-container .product-container li {
+  padding: 10px 10px 10px 10px;
+  transition-duration: 0.1s;
+}
+.main-container .product-container li:hover {
+  box-shadow: 10px 10px 50px #888888;
 }
 .main-container .product-container h2 {
   font-weight: 600;
@@ -589,6 +595,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .header-main .container-left {
     height: 60px;
+    margin-right: 85.22px;
   }
   .header-main .container-left .products-button {
     margin: auto 0;
@@ -707,51 +714,60 @@ body::-webkit-scrollbar-thumb:hover {
     transform-origin: bottom left;
   }
   .header-main .container-right {
-    width: 240px;
-    max-width: 240px;
+    width: 260px;
+    max-width: 260px;
     justify-content: space-between;
   }
-  .header-main .container-right .search-icon-right {
-    width: 60px;
-    max-width: 60px;
-    text-align: center;
-  }
-  .header-main .container-right .search-icon-right img {
+  .header-main .container-right img {
+    position: relative;
+    min-width: 40px;
+    max-width: 40px;
     margin: 0;
     padding: 0;
-    padding-left: 10px;
+  }
+  .header-main .container-right .search-icon-right {
+    width: 80px;
+    max-width: 80px;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .header-main .container-right .search-icon-right img {
+    left: 20px;
   }
   .header-main .container-right .search-icon-right:hover {
     background-color: var(--hover-pink);
     border-radius: var(--border-radius-md);
   }
   .header-main .container-right .favorite-icon {
-    width: 60px;
-    max-width: 60px;
+    width: 100px;
+    max-width: 100px;
     margin: 0;
     text-align: center;
+    padding: 10px 0;
   }
   .header-main .container-right .favorite-icon img {
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
+    left: 30px;
   }
   .header-main .container-right .favorite-icon:hover {
     background-color: var(--hover-pink);
     border-radius: var(--border-radius-md);
   }
   .header-main .container-right .shopping-bag {
-    width: 60px;
-    max-width: 60px;
+    width: 80px;
+    max-width: 80px;
     text-align: center;
     align-content: center;
     position: relative;
     top: -4px;
+    padding: 10px 0;
   }
   .header-main .container-right .shopping-bag img {
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
+    left: 20px;
+  }
+  .header-main .container-right .shopping-bag .count {
+    position: absolute;
+    top: -5px;
+    right: -26px;
   }
   .header-main .container-right .shopping-bag:hover {
     background-color: var(--hover-pink);
@@ -761,29 +777,6 @@ body::-webkit-scrollbar-thumb:hover {
     display: block;
     font-size: 11px;
     font-weight: 600;
-  }
-  .header-main .header-user-actions {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-  }
-  .header-main .header-user-actions .action-btn {
-    position: relative;
-    font-size: 3.5rem;
-    color: var(--onyx);
-    padding: 5px;
-  }
-  .header-main .header-user-actions .count {
-    position: absolute;
-    top: -2px;
-    right: -3px;
-    background: var(--bittersweet);
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 500;
-    line-height: 1;
-    padding: 2px 4px;
-    border-radius: 20px;
   }
   /* #endregion Header */
   .main-container .main-title {
@@ -795,7 +788,7 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .main-container .product-container {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-gap: 40px 20px;
+    grid-gap: 24px 12px;
   }
   .footer-container ul p, .footer-container ul a {
     padding-left: 20%;
@@ -834,7 +827,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-left: 30%;
   }
   .header-main .desktop-navigation-menu {
-    width: 1460px;
+    width: 95%;
     max-width: 1460px;
   }
   .header-main .desktop-navigation-menu .menu-category {
