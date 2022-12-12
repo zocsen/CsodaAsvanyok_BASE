@@ -594,14 +594,15 @@ body::-webkit-scrollbar-thumb:hover {
 		max-width: 320px;
 
 		p {
-			padding-bottom: 20px;
+			padding-bottom: 40px;
 		}
 
 		.tervezo-button {
 			background: var(--bittersweet);
-			padding: 30px;
+			border: 30px solid var(--bittersweet);
 			border-radius: var(--border-radius-md);
 			font-weight: 600;
+			transition: 0.5s;
 		}
 	}
 
@@ -1021,8 +1022,14 @@ body::-webkit-scrollbar-thumb:hover {
 		ul {
 			p, a {padding-left: 20%;}
 		}
-	}
 
+		.footer-tervezo {
+
+			.tervezo-button:hover {
+				scale: (1.1);				
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -1089,8 +1096,6 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 // FIXME
-
-
 
 
 

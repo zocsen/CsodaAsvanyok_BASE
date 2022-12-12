@@ -474,13 +474,14 @@ body::-webkit-scrollbar-thumb:hover {
   max-width: 320px;
 }
 .footer-container .footer-tervezo p {
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .footer-container .footer-tervezo .tervezo-button {
   background: var(--bittersweet);
-  padding: 30px;
+  border: 30px solid var(--bittersweet);
   border-radius: var(--border-radius-md);
   font-weight: 600;
+  transition: 0.5s;
 }
 .footer-container ul {
   display: grid;
@@ -792,6 +793,9 @@ body::-webkit-scrollbar-thumb:hover {
   }
   .footer-container ul p, .footer-container ul a {
     padding-left: 20%;
+  }
+  .footer-container .footer-tervezo .tervezo-button:hover {
+    scale: 1.1;
   }
 }
 @media (min-width: 1200px) {
